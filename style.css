@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+/* css variables */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark_desaturated__blue: hsl(229, 23%, 23%);
+  --dark-grayish_blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  font-family: var(--font-family);
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 15vh;
+  width: 20vw;
+  height: 45vh;
+}
+
+.image-container {
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.image-circle {
+  background-image: url("../images/image-victor.jpg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 115px;
+  margin-left: 140px;
+}
+
+.card-stats {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  line-height: 20px;
+  border-top: 1px solid var(--dark-gray);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.stats-name {
+  display: flex;
+  font-size: 0.65rem;
+  color: var(--dark-grayish_blue);
+  gap: 3.5rem;
+  padding-left: 40px;
+}
+
+.about {
+  display: flex;
+  color: var(--dark-gray);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 12px; */
+  gap: 1rem;
+}
+
+.age {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+}
+
+.name {
+  font-size: 1.5rem;
+  color: var(--Very-dark_desaturated__blue);
+}
